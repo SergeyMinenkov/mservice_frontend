@@ -1,0 +1,710 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>M | SERVICE</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="plugins/gritter/css/jquery.gritter.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<!-- http://opencart.templatemela.com/OPCADD/OPC018/ -->
+	<div id="wrapper" class="container-fluid">
+		<div class="row">
+
+			<!--
+			Теги HTML5:
+		
+			<header>
+			<nav> 
+			<aside>
+			<article>
+			<section>
+			<figure>
+			<figurecaption>
+			<footer>
+			...
+			<audio>
+			<video>
+			...
+		
+			Используем <header> для шапки
+			Используем <nav> для меню
+			Используем <aside> для боковых колонок справа и слева
+			Используем <article> для основного текста страницы
+			Заголовок <H1> внутри или перед <article>
+			Используем <section> для повторяющихся блоков контента
+			Используем заголовки <h2>-<h6> внутри <section>
+			<h2>-<h6> оборачиваем в <header>, если они имеют дополнительный	текст
+			Используем <figure> и <figurecaption> для основной картинки блока
+			Используем <footer> для подвала
+			
+		Атрибуты role:
+			role="banner" - используется для шапки. Используется только один раз на странице
+			role="search" - область поиска на странице, как правило - это форма поиска
+			role="navigation" - меню навигации
+			role="main" - основное содержание документа, главная роль. Используется только один раз на странице
+			role="contentinfo" - обычно применяется к подвалу. Используется только один раз на странице
+
+			<figure>
+				<img src="images/image.png" alt="">
+				<figcaption>
+					<span>Картинка 1</span>
+				</figcaption>
+			</figure>
+
+			<section class="news">
+				<header>
+					<h2>Заголовок 2-го уровня</h2>			
+				</header>
+				<p>Текст текст текст текст текст текст текст текст текст</p>
+				<a href="#">Далее...</a>
+			</section>
+
+			<section class="news">
+				<header>
+					<h2>Заголовок 2-го уровня</h2>			
+				</header>
+				<p>Текст текст текст текст текст текст текст текст текст</p>
+				<a href="#">Далее...</a>
+			</section>
+		
+	-->
+			
+			<header class="container hidden-xs" role="banner">
+				<div class="row">
+					
+					<div class="col-xs-4">
+						<div class="row">
+							<div id="logo" class="col-sm-4">
+								<a href="#"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+								<p>Экспертные проверки</p>
+								<p>Объектов и Субъектов</p>
+							</div>
+							<div class="col-sm-8">
+								
+							</div>
+						</div>
+						
+					</div> <!-- end col -->
+
+					<div class="col-xs-4 text-center">
+						<a href="#order" class="scrolling-links btn btn-warning">Заказать проверку</a>
+					</div> <!-- end col -->
+
+
+					<div class="col-xs-4 text-right">
+						<p><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 965-88-36</p>
+						<p><i class="fa fa-mobile" aria-hidden="true"></i>+7 (926) 526-50-60</p>
+						<p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto: info@mservice.pro">info@mservice.pro</a></p>
+					</div> <!-- end col -->
+
+				</div> <!-- end row -->
+			</header> <!-- end header -->
+			
+			
+			<div id="main-menu-container" class="container-fluid">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<nav role="navigation" id="main-menu" class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand visible-xs" href="#">M | SERVICE</a>
+								</div>
+								<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav">
+										<li><a href="index.html">Услуги</a></li>
+										<li role="presentation" class="dropdown">
+											<a href="#" data-target="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+											  Рекоммендуемые проверки
+											</a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Подпункт 1</a></li>
+												<li><a href="#">Подпункт 2</a></li>
+												<li><a href="#">Подпункт 3</a></li>
+												<li><a href="#">Подпункт 4</a></li>
+												<li><a href="#">Подпункт 5</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Полезное</a></li>
+										<li><a href="#">О нас</a></li>
+										<!-- <li><a href="#">Пункт 4</a></li>
+										<li><a href="#">Пункт 5</a></li> -->
+									</ul>
+								</div>
+							</nav>
+						</div> <!-- end row -->
+					</div> <!-- end container -->
+				</div> <!-- end row -->
+			</div> <!-- end container-fluid -->
+			
+			<main role="main">
+				
+				<div id="banner-on-main-container" class="container-fluid">
+					<div class="row">
+						<div id="banner-on-main" class="col-sm-12">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										
+										<h1>
+											Экспертные проверки объектов и субъектов
+											<br><br>
+											<a href="#order" class="scrolling-links btn btn-warning btn-lg">Заказать проверку</a>
+										</h1>
+										
+										
+									</div> <!-- end col -->
+								</div> <!-- end row -->
+							</div> <!-- end container-fluid -->
+						</div> <!-- end col -->
+					</div> <!-- end row -->
+				</div> <!-- end container-fluid -->
+				
+				<div class="container">
+					<div class="row">
+						<div class="advance">
+							<div class="col-sm-4">
+								<div class="advance-block">
+									<div class="advance-header">
+										<img src="images/advance1.png" alt="">
+										<h2>Экспертность</h2>
+									</div>
+									<p>Мы являемся экспертами в области срочных юридических проверок недвижимости</p>
+								</div>
+							</div> <!-- end col -->
+							<div class="col-sm-4">
+								<div class="advance-block">
+									<div class="advance-header">
+										<img src="images/advance2.png" alt="">
+										<h2>Опыт</h2>
+									</div>
+									<p>Более 10 лет мы реализуем срочную подготовку документов в сегменте недвижимости</p>
+								</div>
+							</div> <!-- end col -->
+							<div class="col-sm-4">
+								<div class="advance-block">
+									<div class="advance-header">
+										<img src="images/advance3.png" alt="">
+										<h2>Надежность</h2>
+									</div>
+									<p>Мы всегда находим компромисс при сложных проверках</p>
+								</div>	
+							</div> <!-- end col -->
+						</div> <!-- end advance -->
+						
+						<div id="order" class="col-sm-12">
+
+
+							<!-- Вкладки панелей -->  
+							<div class="tab-content">
+								
+								<div role="tabpanel" class="tab-pane active" id="regions">
+									<h2>Выберите регион</h2>
+									
+									<div id="step1">
+										<div class="radio">
+										  <label>
+											<input type="radio" name="selectRegion" id="moscow" value="Москва" checked>
+												Москва
+										  </label>
+										</div>
+										<div class="radio">
+										  <label>
+											<input type="radio" name="selectRegion" id="moscow-region" value="Московская область">
+											Московская область
+										  </label>
+										</div>
+										<div class="radio">
+										  <label>
+											<input type="radio" name="selectRegion" id="regions-all" value="Регионы РФ">
+											Регионы РФ
+										  </label>
+										</div>
+									</div>	<!-- end step1 -->
+
+									<div class="row">
+										<div class="col-xs-12 text-center">
+											<a id="go-step2" href="#select-services" data-toggle="tab" class="btn btn-warning btn-lg btn-navigate">Далее</a>
+										</div>
+									</div>
+									
+								</div>	<!-- end tabpanel -->
+								
+								<div role="tabpanel" class="tab-pane" id="select-services">
+									<div id="order-select-services">
+										<a id="go-step1" href="#regions" data-toggle="tab"><i class="fa fa-chevron-left"></i> К выбору региона</a>
+										<h2 class="text-center">Выберите услуги (<span id="region-name-step2">Москва</span>)</h2>
+										<hr>
+										<div class="service-block row">
+											
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default row">
+													<div class="col-xs-8">
+														<div class="panel-heading" role="tab" id="headingOne">
+														  <h4 class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+															  Выписка из ЕГРН
+															</a>
+														  </h4>
+														</div>
+														<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+														  <div class="panel-body">
+															<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+															<div class="row">
+																<h4 class="col-xs-12">Образец:</h4>
+																<div class="col-xs-6 col-sm-4">
+																	<a href="#"><img src="images/egrn1.jpg" alt="" class="img-responsive"></a>
+																</div>
+																<div class="col-xs-6 col-sm-4">
+																	<a href="#"><img src="images/egrn2.jpg" alt="" class="img-responsive"></a>
+																</div>
+															</div>
+														  </div>
+														</div>
+													</div>	<!-- end col -->
+													<div class="col-xs-4">
+														<!--<p>4500 руб.</p>-->
+
+														<select class="select-price form-control input-lg">
+														  <option>выбрать стоимость</option>
+														  <option value="4500">1 день 4500 руб.</option>
+														  <option value="5500">2 дня 5500 руб.</option>
+														</select>
+													</div>	<!-- end col -->
+			
+												</div>	<!-- end panel -->
+											</div>	<!-- end panel group -->
+
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default row">
+													<div class="col-xs-8">
+														<div class="panel-heading" role="tab" id="headingOne">
+														  <h4 class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+															  Выписка из ЕГРЮЛ
+															</a>
+														  </h4>
+														</div>
+														<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+														  <div class="panel-body">
+															<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+															<div class="row">
+																<h4 class="col-xs-12">Образец:</h4>
+																<div class="col-xs-6 col-sm-4">
+																	<a href="#"><img src="images/egrn1.jpg" alt="" class="img-responsive"></a>
+																</div>
+																<div class="col-xs-6 col-sm-4">
+																	<a href="#"><img src="images/egrn2.jpg" alt="" class="img-responsive"></a>
+																</div>
+															</div>
+														  </div>
+														</div>
+													</div>	<!-- end col -->
+													<div class="col-xs-4">
+														<!--<p>4500 руб.</p>-->
+
+														<select class="select-price form-control input-lg">
+														  <option>выбрать стоимость</option>
+														  <option value="4500">1 день 4500 руб.</option>
+														  <option value="5500">2 дня 5500 руб.</option>
+														</select>
+													</div>	<!-- end col -->
+			
+												</div>	<!-- end panel -->
+											  
+											</div>	<!-- end panel group -->
+											
+											
+										</div>	<!-- end service-block -->
+									</div>	<!-- order-select-services -->
+									
+									<!--<div class="row">
+										<div class="col-sm-6 text-center">
+											<a href="#regions" data-toggle="tab" class="btn btn-warning btn-lg btn-navigate" onclick="hidecart()">Назад</a>
+										</div>
+										<div class="col-sm-6 text-center">
+											<a href="#step3" data-toggle="tab" class="btn btn-warning btn-lg btn-navigate">Заказать</a>
+										</div>
+									</div>-->
+
+								</div>	<!-- end tabpanel -->
+								
+								<div role="tabpanel" class="tab-pane" id="step3">
+									
+									<div id="order-payment">
+										<a href="#select-services" data-toggle="tab" onclick="showcart()"><i class="fa fa-chevron-left"></i> К услугам</a>
+										<h2 class="text-center">Оформить заказ</h2>
+										<hr>
+										
+										<div class="panel-group" id="order-step3" role="tablist" aria-multiselectable="true">
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="heading-order-step3">
+													<div class="row">
+														<div class="col-sm-8">
+															<h4>Общая стоимость: <span class="step3-sum">0</span> <i class="fa fa-rub"></i> (<span id="region-name-step3"></span>)</h4>
+														</div>
+														<h4 class="panel-title col-sm-4 text-right">
+															<a role="button" data-toggle="collapse" data-parent="#order-step3" href="#collapse-order-table" aria-expanded="true" aria-controls="collapse-order-table">
+															  Подробности заказа
+															</a> 
+															<i class="fa fa-shopping-basket"></i>
+														</h4>
+													</div>	<!-- end row -->
+												</div>	<!-- end panel-heading -->
+												<div id="collapse-order-table" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-order-step3">
+													<div class="panel-body">
+														<table id="table-order-step3" class="table table-responsive table-striped table-bordered">
+															<thead>
+																<tr>
+																	<th>№</th>
+																	<th>Наименование</th>
+																	<th>Цена, руб.</th>
+																</tr>
+															</thead>
+															<tbody>
+																<!--<tr>
+																	<td>1</td>
+																	<td>Выписка из ЕГРЮЛ</td>
+																	<td>5500</td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>Выписка из ЕГРН</td>
+																	<td>4500</td>
+																</tr>
+																<tr>
+																	<td>3</td>
+																	<td>Выписка из ЕГРН</td>
+																	<td>5500</td>
+																</tr>-->
+																<tr id="total-tr">
+																	<td></td>
+																	<td>Итого:</td>
+																	<td><span class="step3-sum">0</span> <i class="fa fa-rub"></i></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>	<!-- end panel-body -->
+												</div>	<!-- end panel-collapse -->
+											</div>	<!-- end panel -->
+										</div>	<!-- end panel-group -->
+										
+										<h2 class="text-center">Как с вами связаться:</h2>
+										<hr>
+										<div class="row">
+											<form>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="Адрес объекта *" name="object-address" id="object-address" required />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="Ваше имя *" name="your-name" id="your-name" required />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="Электронный адрес: *" name="your-email" id="your-email" required />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="Контактный телефон *" name="your-phone" id="your-phone" required />
+														</div>
+													</div>
+												</div> <!-- end col -->
+												<div class="col-sm-6">
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="Адрес регистрации проверяемого" name="reg-address" id="reg-address" />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="ФИО проверяемого" name="fio" id="fio" />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-calendar-o fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="Дата рождения проверяемого" name="birthday" id="birthday" />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<div class="input-group-addon"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
+															<input type="text" class="form-control input-lg" placeholder="ИНН проверяемого" name="inn" id="inn" />
+														</div>
+													</div>
+												</div> <!-- end col -->
+												<div class="col-sm-12">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" checked> 
+														Согласен на обработку персональных данных в соответствии с <a href="#" target="_blank">Политикой конфиденциальности</a>
+													</label>
+												</div>
+												<hr>
+												<button type="submit" class="btn btn-danger btn-lg">Оформить заказ</button>
+												</div> <!-- end col -->
+											</form>
+										</div>	<!-- end row -->
+									</div>	<!-- end #order-payment -->
+								</div>	<!-- end tabpanel -->
+							</div>	<!-- end tab-content -->
+						</div> <!-- end col -->
+							    		
+						
+						<div id="about-on-main">
+							<div class="col-sm-6 text-right">
+								<div id="about-on-main-left">
+									<h2>О компании</h2>
+									<div class="img-block-left">
+										<img src="img/green-line.png" alt="">
+									</div>
+									<p>Компания "МService" - является надежным<br>
+									партнером при проведении сделок <br>
+									с недвижимостью в Москве и<br>
+									Московской области<br>
+									Благодаря постоянному развитию и<br>
+									открытому подходу к решению новых задач,<br>
+									услуги MService становятся более<br>
+									оптимизированными, исходя из потребностей<br>
+									наших клиентов и особенностей российских<br>
+									рынка недвижимости
+									</p>
+									
+									<p>Миссия MService - максимально точная<br>
+									проверка объектов недвижимости и исполнение <br>
+									заказов в короткие сроки
+									</p>
+									<div class="img-block-left">
+										<img src="img/green-line.png" alt="">
+									</div>
+									<a href="#">Узнать подробнее</a>
+								</div>
+							</div> <!-- end col -->
+							<div class="col-sm-6">
+								<div id="about-on-main-right">
+									<div class="about-services">
+										<div class="img-block">
+											<img src="images/about-on-main1.png" alt="">
+										</div>
+										<div class="text-block">
+											<h3>Комплексная подготовка документов</h3>
+											<p>Срочная подготовка комплекта необходимых справок и документов для сделки с недвижимостью</p>
+										</div>
+									</div>
+									<div class="about-services">
+										<div class="img-block">
+											<img src="images/about-on-main1.png" alt="">
+										</div>
+										<div class="text-block">
+											<h3>Комплексная подготовка документов</h3>
+											<p>Срочная подготовка комплекта необходимых справок и документов для сделки с недвижимостью</p>
+										</div>
+									</div>
+									<div class="about-services">
+										<div class="img-block">
+											<img src="images/about-on-main1.png" alt="">
+										</div>
+										<div class="text-block">
+											<h3>Комплексная подготовка документов</h3>
+											<p>Срочная подготовка комплекта необходимых справок и документов для сделки с недвижимостью</p>
+										</div>
+									</div>
+									<div class="about-services">
+										<div class="img-block">
+											<img src="images/about-on-main1.png" alt="">
+										</div>
+										<div class="text-block">
+											<h3>Комплексная подготовка документов</h3>
+											<p>Срочная подготовка комплекта необходимых справок и документов для сделки с недвижимостью</p>
+										</div>
+									</div>
+									<div class="about-services">
+										<div class="img-block">
+											<img src="images/about-on-main1.png" alt="">
+										</div>
+										<div class="text-block">
+											<h3>Комплексная подготовка документов</h3>
+											<p>Срочная подготовка комплекта необходимых справок и документов для сделки с недвижимостью</p>
+										</div>
+									</div>
+									<div class="about-services">
+										<div class="img-block">
+											<img src="images/about-on-main1.png" alt="">
+										</div>
+										<div class="text-block">
+											<h3>Комплексная подготовка документов</h3>
+											<p>Срочная подготовка комплекта необходимых справок и документов для сделки с недвижимостью</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- end col -->
+						</div>
+						
+						<div id="banners-on-main">
+							<div class="col-sm-7">
+								<a href="#"><img src="images/bg.png" alt="" width="100%" height="200"></a>
+							</div> <!-- end col -->
+							<div class="col-sm-5">
+								<a href="#"><img src="images/bg.png" alt="" width="100%" height="200"></a>
+							</div> <!-- end col -->
+						</div>
+						
+					</div> <!-- end row -->
+				</div> <!-- end container -->
+				
+				<div id="testimonials-on-main" class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							Отзывы
+						</div> <!-- end col -->
+					</div> <!-- end row -->
+				</div> <!-- end container-fluid -->
+				
+				<div id="our-clients-on-main" class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							Наши клиенты...
+						</div> <!-- end col -->
+					</div> <!-- end row -->
+				</div> <!-- end container -->
+				
+				<div id="subscribe-container" class="container-fluid">
+					<div class="row">
+						<div id="subscribe" class="container">
+							<div class="row">
+								<div class="col-sm-3">
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									<span>Подписка</span>
+								</div> <!-- end col -->
+								<div class="col-sm-4">
+									<p>Получайте наши свежие новости на email</p>
+								</div> <!-- end col -->
+								<div class="col-sm-5">
+									<form id="subscribe-form" novalidate>
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control input-lg" placeholder="E-mail" id="subscribe-field" />
+												<div class="input-group-addon">
+													<button type="submit">Подписаться</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div> <!-- end col -->
+							</div> <!-- end row -->
+						</div> <!-- end container -->
+					</div> <!-- end row -->
+				</div> <!-- end container-fluid -->
+				
+			</main> <!-- end main -->
+			
+
+			<footer role="contentinfo" class="container-fluid">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<div class="footer-block col-sm-4">
+								<h4>Меню</h4>
+								<ul>
+									<li><a href="#">Пункт 1</a></li>
+									<li><a href="#">Пункт 2</a></li>
+									<li><a href="#">Пункт 3</a></li>
+									<li><a href="#">Пункт 4</a></li>
+									<li><a href="#">Пункт 5</a></li>
+								</ul>
+							</div> <!-- end col -->
+							<div class="footer-block col-sm-4">
+								<h4>Меню</h4>
+								<ul>
+									<li><a href="#">Пункт 1</a></li>
+									<li><a href="#">Пункт 2</a></li>
+									<li><a href="#">Пункт 3</a></li>
+									<li><a href="#">Пункт 4</a></li>
+									<li><a href="#">Пункт 5</a></li>
+								</ul>
+							</div> <!-- end col -->
+							<div class="footer-block col-sm-4">
+								<h4>Контакты</h4>
+								<ul>
+									<li><i class="fa fa-phone" aria-hidden="true"></i> +7 (495) 965-88-36</li>
+									<li><i class="fa fa-mobile" aria-hidden="true"></i> +7 (926) 526-50-60</li>
+									<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto: info@mservice.pro">info@mservice.pro</a></li>
+									<li><i class="fa fa-map-marker" aria-hidden="true"></i> Москва, Средняя Первомайская, 4</li>
+								</ul>
+							</div> <!-- end col -->
+							<div id="copyright" class="footer-block col-xs-12 text-center">
+								<p>2008 - 2018 MService - Экспертные проверки Объектов и Субъектов</p>
+								<p>Услуги предоставляются по Москве, Московской области и регионам РФ.</p>
+							</div> <!-- end col -->
+						</div> <!-- end row -->
+					</div> <!-- end container -->
+				</div> <!-- end row -->
+			</footer> <!-- end footer -->
+		
+		</div> <!-- end row -->
+
+		
+
+	</div> <!-- end wrapper container-fluid -->
+	
+
+	<div id="cart-container" class="fadeInUp animated">
+		<div id="cart" class="container">
+			<div class="row">
+				<div class="col-sm-1 text-center">
+					<i class="fa fa-shopping-basket fa-3x"></i>
+				</div>
+				<div class="col-sm-7">
+					<p id="cart-empty-text">Корзина пуста...</p>
+					<ol id="cart-list">
+						<!--<li>Выписка из ЕГРН <i class="fa fa-close" title="Удалить"></i></li> 
+						<li>Выписка из ЕГРЮЛ <i class="fa fa-close" title="Удалить"></i></li>-->
+					</ol>
+				</div>
+				<div class="col-sm-4 text-right">
+					<div id="sum-block">
+						<span id="sum">0</span> 
+						<i class="fa fa-rub"></i>
+					</div>
+					<div id="btn-order-block">
+						<a id="go-step3" href="#step3" data-toggle="tab" class="btn btn-danger btn-lg">Заказать</a>
+					</div>
+				</div>
+			</div>	<!-- end row -->
+		</div>	 <!-- end container -->
+	</div>	 <!-- end cart -->
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="plugins/gritter/js/jquery.gritter.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
