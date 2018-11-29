@@ -123,15 +123,28 @@
 		$('#testimonials-on-main').hide();
 		$('#our-clients-on-main').hide();
 		$('#subscribe-container').hide();
+		// добавить выбранный регион во все теги на шаге 2 и 3
+		var selectedRegion = $('input[name="selectRegion"]:checked').val();
+		$('#region-name-step2').html(selectedRegion);
+		$('#region-name-step3').html(selectedRegion);
+
 	});
 	// кнопка "Заказать" на третий шаг
 	$('#go-step3').click(function() {
-		hidecart();
+		// если корзина пуста - показать сообщение и не переходить на шаг 3
+		$('#cart-list').each(function(){
+			if( $(this).find('li').length == 0 ) {
+				$('#go-step3').attr('href', '#');
+				alert('Не выбрано ни одной услуги');
+			}
+			else {
+				$('#go-step3').attr('href', '#step3');
+				hidecart();
+			}
+		});
 	});
-	
-	
-	
-	// выбрать регион
+
+	// выбрать регион на шаге 1
 	$('input[name="selectRegion"]').change(function(){ 
 		var selectedRegion = $('input[name="selectRegion"]:checked').val();
 		$('#region-name-step2').html(selectedRegion);
@@ -198,21 +211,24 @@
 	});
 	
 	// удалить услугу из корзины
-	$('#cart-list, i').on('click', function () {
-		//alert($(this).html());
-		// вычесть сумму услуги из общей суммы в корзине
+	$('#cart-list').on('click', '.fa-close', function () {
+		// вычесть сумму услуги из общей суммы в корзине и в таблице на шаге 3
 		var sum = $('#sum').html();
 		if (sum <= 0) {
 			$('#sum').html('0');
-			//$('.step3-sum').html('0');
+			$('.step3-sum').html('0');
 		} else {
-			$('#sum').html( parseFloat(sum) - parseFloat($(this).find('span').html()) );
-			//$('.step3-sum').html( parseFloat(sum) - parseFloat($(this).find('span').html());
+			$('#sum').html( parseFloat(sum) - parseFloat($(this).closest('li').find('span').html()) );
+			$('.step3-sum').html( parseFloat(sum) - parseFloat($(this).closest('li').find('span').html()) );
 		}
-		// удалить услугу
-		//$(this.parentNode).find('li').remove();
-		//$(this).children('li').find('i').toggle('slow');
+		// удалить услугу из списка
+		$(this).closest('li').remove();		
 		
-		//показать "Корзина пуста..."
-		//$('#cart-empty-text').show();
+		//показать "Корзина пуста..." если список пуст
+		$('#cart-list').each(function(){
+			if( $(this).find('li').length == 0 ) {
+				$('#cart-empty-text').show();
+			}
+		});
+
 	});
