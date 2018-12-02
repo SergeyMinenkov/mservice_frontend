@@ -422,6 +422,60 @@ main {
 /* конец добавить 15-11-18 */
 
 
+/* добавить 03-12-18 */
+#recommended {
+	background-color: #fff;
+	padding: 2em;
+	margin: 2em;
+}
+#recommended .recommended-block {
+	padding: 2em;
+}
+#recommended .recommended-block h3 {
+	background-color: #f0f0f0;
+	padding: 0.8em 0.5em;
+	border: 1px #e0e0e0 solid;
+	border-bottom: 0;
+}
+#recommended table th {
+	background-color: #f7f7f7;
+	font-weight: 600;
+	text-align: center;
+}
+#recommended table td {
+	vertical-align: middle;
+}
+#recommended table td .checkbox {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1em;
+}
+#recommended table .check-sum {
+	text-align: center;
+	font-size: 1.2em;
+	vertical-align: middle;
+}
+#recommended table .check-sum-total {
+	font-size: 1.4em;
+	vertical-align: middle;
+	font-weight: 600;
+}
+#recommended .check-order-btn-block {
+	margin-top: -1em; 
+	padding: 0.5em 0;
+}
+#recommended .check-order-btn-block .btn {
+	width: 180px;
+}
+#recommended form input[type="text"],
+#recommended input[type="date"] {
+	min-width: 350px;
+}
+#recommended form .input-group-addon {
+	width: 60px;
+}
+/* конец добавить 03-12-18 */
+
 aside {
 	
 }

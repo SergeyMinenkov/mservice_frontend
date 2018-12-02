@@ -16,69 +16,9 @@
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<!-- http://opencart.templatemela.com/OPCADD/OPC018/ -->
 	<div id="wrapper" class="container-fluid">
 		<div class="row">
 
-			<!--
-			Теги HTML5:
-		
-			<header>
-			<nav> 
-			<aside>
-			<article>
-			<section>
-			<figure>
-			<figurecaption>
-			<footer>
-			...
-			<audio>
-			<video>
-			...
-		
-			Используем <header> для шапки
-			Используем <nav> для меню
-			Используем <aside> для боковых колонок справа и слева
-			Используем <article> для основного текста страницы
-			Заголовок <H1> внутри или перед <article>
-			Используем <section> для повторяющихся блоков контента
-			Используем заголовки <h2>-<h6> внутри <section>
-			<h2>-<h6> оборачиваем в <header>, если они имеют дополнительный	текст
-			Используем <figure> и <figurecaption> для основной картинки блока
-			Используем <footer> для подвала
-			
-		Атрибуты role:
-			role="banner" - используется для шапки. Используется только один раз на странице
-			role="search" - область поиска на странице, как правило - это форма поиска
-			role="navigation" - меню навигации
-			role="main" - основное содержание документа, главная роль. Используется только один раз на странице
-			role="contentinfo" - обычно применяется к подвалу. Используется только один раз на странице
-
-			<figure>
-				<img src="images/image.png" alt="">
-				<figcaption>
-					<span>Картинка 1</span>
-				</figcaption>
-			</figure>
-
-			<section class="news">
-				<header>
-					<h2>Заголовок 2-го уровня</h2>			
-				</header>
-				<p>Текст текст текст текст текст текст текст текст текст</p>
-				<a href="#">Далее...</a>
-			</section>
-
-			<section class="news">
-				<header>
-					<h2>Заголовок 2-го уровня</h2>			
-				</header>
-				<p>Текст текст текст текст текст текст текст текст текст</p>
-				<a href="#">Далее...</a>
-			</section>
-		
-	-->
-			<!-- 28-11-18 git started -->
 			<header class="container hidden-xs" role="banner">
 				<div class="row">
 					
@@ -153,278 +93,204 @@
 			</div> <!-- end container-fluid -->
 			
 			<main role="main">
+
 				
 				<div class="container">
-					<div class="row">
-						<h1>
-							Рекомендуемые проверки
-						</h1>
-					</div> <!-- end row -->
-				</div> <!-- end container -->
-				
-				<div class="container">
-					<div class="row">
-						
-						
-						<div id="order" class="col-sm-12">
-
-
-							<!-- Вкладки панелей -->  
-							<div class="tab-content">
-								
-								<div role="tabpanel" class="tab-pane active" id="regions">
-									<h2>Выберите регион</h2>
+					<div class="row">					
+						<div id="order" class="col-sm-12">	
+							<div id="recommended">
 									
-									<div id="step1">
-										<div class="radio">
-										  <label>
-											<input type="radio" name="selectRegion" id="moscow" value="Москва" checked>
-												Москва
-										  </label>
-										</div>
-										<div class="radio">
-										  <label>
-											<input type="radio" name="selectRegion" id="moscow-region" value="Московская область">
-											Московская область
-										  </label>
-										</div>
-										<div class="radio">
-										  <label>
-											<input type="radio" name="selectRegion" id="regions-all" value="Регионы РФ">
-											Регионы РФ
-										  </label>
-										</div>
-									</div>	<!-- end step1 -->
-
-									<div class="row">
-										<div class="col-xs-12 text-center">
-											<a id="go-step2" href="#select-services" data-toggle="tab" class="btn btn-warning btn-lg btn-navigate">Далее</a>
-										</div>
+								<h1 class="text-center">Рекомендуемые проверки</h1>
+								<hr>
+								
+								<div class="recommended-block">
+									<h3>Комплекс экспресс-проверка объекта</h3>
+									<table class="table table-responsive table-bordered">
+										<thead>
+											<tr>
+												<th>№</th>
+												<th>Наименование проверки</th>
+												<th>Цена, руб.</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-center">1</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked disabled>
+														</label>
+													</span>
+													История перехода права технический вид</td>
+												<td class="check-sum">4000</td>
+											</tr>
+											<tr>
+												<td class="text-center">2</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked>
+														</label>
+													</span>Архивная выписка из паспортного стола</td>
+												<td class="check-sum">2500</td>
+											</tr>
+											<tr>
+												<td class="text-center">3</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked>
+														</label>
+													</span>ЦАБ выгрузка из базы</td>
+												<td class="check-sum">1500</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>Итого:</td>
+												<td class="text-center"><span class="check-sum-total">8000</span></td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="check-order-btn-block text-left">
+										<a href="#" class="btn btn-danger btn-lg">Заказать</a>
 									</div>
-									
-								</div>	<!-- end tabpanel -->
+								</div> <!-- end recommended-block -->
 								
-								<div role="tabpanel" class="tab-pane" id="select-services">
-									<div id="order-select-services">
-										<a id="go-step1" href="#regions" data-toggle="tab"><i class="fa fa-chevron-left"></i> К выбору региона</a>
-										<h2 class="text-center">Выберите услуги (<span id="region-name-step2">Москва</span>)</h2>
-										<hr>
-										<div class="service-block row">
-											
-											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-												<div class="panel panel-default row">
-													<div class="col-xs-8">
-														<div class="panel-heading" role="tab" id="headingOne">
-														  <h4 class="panel-title">
-															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-															  Выписка из ЕГРН
-															</a>
-														  </h4>
-														</div>
-														<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-														  <div class="panel-body">
-															<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-															<div class="row">
-																<h4 class="col-xs-12">Образец:</h4>
-																<div class="col-xs-6 col-sm-4">
-																	<a href="#"><img src="images/egrn1.jpg" alt="" class="img-responsive"></a>
-																</div>
-																<div class="col-xs-6 col-sm-4">
-																	<a href="#"><img src="images/egrn2.jpg" alt="" class="img-responsive"></a>
-																</div>
-															</div>
-														  </div>
-														</div>
-													</div>	<!-- end col -->
-													<div class="col-xs-4">
-														<!--<p>4500 руб.</p>-->
-
-														<select class="select-price form-control input-lg">
-														  <option>выбрать стоимость</option>
-														  <option value="4500">1 день 4500 руб.</option>
-														  <option value="5500">2 дня 5500 руб.</option>
-														</select>
-													</div>	<!-- end col -->
-			
-												</div>	<!-- end panel -->
-											</div>	<!-- end panel group -->
-
-											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-												<div class="panel panel-default row">
-													<div class="col-xs-8">
-														<div class="panel-heading" role="tab" id="headingOne">
-														  <h4 class="panel-title">
-															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-															  Выписка из ЕГРЮЛ
-															</a>
-														  </h4>
-														</div>
-														<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-														  <div class="panel-body">
-															<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
-															<div class="row">
-																<h4 class="col-xs-12">Образец:</h4>
-																<div class="col-xs-6 col-sm-4">
-																	<a href="#"><img src="images/egrn1.jpg" alt="" class="img-responsive"></a>
-																</div>
-																<div class="col-xs-6 col-sm-4">
-																	<a href="#"><img src="images/egrn2.jpg" alt="" class="img-responsive"></a>
-																</div>
-															</div>
-														  </div>
-														</div>
-													</div>	<!-- end col -->
-													<div class="col-xs-4">
-														<!--<p>4500 руб.</p>-->
-
-														<select class="select-price form-control input-lg">
-														  <option>выбрать стоимость</option>
-														  <option value="4500">1 день 4500 руб.</option>
-														  <option value="5500">2 дня 5500 руб.</option>
-														</select>
-													</div>	<!-- end col -->
-			
-												</div>	<!-- end panel -->
-											  
-											</div>	<!-- end panel group -->
-											
-											
-										</div>	<!-- end service-block -->
-									</div>	<!-- order-select-services -->
-
-								</div>	<!-- end tabpanel -->
+								<div class="recommended-block">
+									<h3>Комплекс объект-субъект min</h3>
+									<table class="table table-responsive table-bordered">
+										<thead>
+											<tr>
+												<th>№</th>
+												<th>Наименование проверки</th>
+												<th>Цена, руб.</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-center">1</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked disabled>
+														</label>
+													</span>
+													История перехода права технический вид</td>
+												<td class="check-sum">4000</td>
+											</tr>
+											<tr>
+												<td class="text-center">2</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked disabled>
+														</label>
+													</span>Архивная выписка из паспортного стола</td>
+												<td class="check-sum">2500</td>
+											</tr>
+											<tr>
+												<td class="text-center">3</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked>
+														</label>
+													</span>ЦАБ выгрузка из базы</td>
+												<td class="check-sum">1500</td>
+											</tr>
+											<tr>
+												<td class="text-center">4</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked>
+														</label>
+													</span>ПНД+НД</td>
+												<td class="check-sum">4000</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>Итого:</td>
+												<td class="text-center"><span class="check-sum-total">12000</span></td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="check-order-btn-block text-left">
+										<a href="#" class="btn btn-danger btn-lg">Заказать</a>
+									</div>
+								</div> <!-- end recommended-block -->
 								
-								<div role="tabpanel" class="tab-pane" id="step3">
-									
-									<div id="order-payment">
-										<a href="#select-services" data-toggle="tab" onclick="showcart()"><i class="fa fa-chevron-left"></i> К услугам</a>
-										<h2 class="text-center">Оформить заказ</h2>
-										<hr>
-										
-										<div class="panel-group" id="order-step3" role="tablist" aria-multiselectable="true">
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading-order-step3">
-													<div class="row">
-														<div class="col-sm-8">
-															<h4>Общая стоимость: <span class="step3-sum">0</span> <i class="fa fa-rub"></i> (<span id="region-name-step3"></span>)</h4>
-														</div>
-														<h4 class="panel-title col-sm-4 text-right">
-															<a role="button" data-toggle="collapse" data-parent="#order-step3" href="#collapse-order-table" aria-expanded="true" aria-controls="collapse-order-table">
-															  Подробности заказа
-															</a> 
-															<i class="fa fa-shopping-basket"></i>
-														</h4>
-													</div>	<!-- end row -->
-												</div>	<!-- end panel-heading -->
-												<div id="collapse-order-table" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-order-step3">
-													<div class="panel-body">
-														<table id="table-order-step3" class="table table-responsive table-striped table-bordered">
-															<thead>
-																<tr>
-																	<th>№</th>
-																	<th>Наименование</th>
-																	<th>Цена, руб.</th>
-																</tr>
-															</thead>
-															<tbody>
-																<!--<tr>
-																	<td>1</td>
-																	<td>Выписка из ЕГРЮЛ</td>
-																	<td>5500</td>
-																</tr>
-																<tr>
-																	<td>2</td>
-																	<td>Выписка из ЕГРН</td>
-																	<td>4500</td>
-																</tr>
-																<tr>
-																	<td>3</td>
-																	<td>Выписка из ЕГРН</td>
-																	<td>5500</td>
-																</tr>-->
-																<tr id="total-tr">
-																	<td></td>
-																	<td>Итого:</td>
-																	<td><span class="step3-sum">0</span> <i class="fa fa-rub"></i></td>
-																</tr>
-															</tbody>
-														</table>
-													</div>	<!-- end panel-body -->
-												</div>	<!-- end panel-collapse -->
-											</div>	<!-- end panel -->
-										</div>	<!-- end panel-group -->
-										
-										<h2 class="text-center">Как с вами связаться:</h2>
-										<hr>
-										<div class="row">
-											<form>
-												<div class="col-sm-6">
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="Адрес объекта *" name="object-address" id="object-address" required />
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="Ваше имя *" name="your-name" id="your-name" required />
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="Электронный адрес: *" name="your-email" id="your-email" required />
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="Контактный телефон *" name="your-phone" id="your-phone" required />
-														</div>
-													</div>
-												</div> <!-- end col -->
-												<div class="col-sm-6">
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="Адрес регистрации проверяемого" name="reg-address" id="reg-address" />
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="ФИО проверяемого" name="fio" id="fio" />
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-calendar-o fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="Дата рождения проверяемого" name="birthday" id="birthday" />
-														</div>
-													</div>
-													<div class="form-group">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
-															<input type="text" class="form-control input-lg" placeholder="ИНН проверяемого" name="inn" id="inn" />
-														</div>
-													</div>
-												</div> <!-- end col -->
-												<div class="col-sm-12">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" checked> 
-														Согласен на обработку персональных данных в соответствии с <a href="#" target="_blank">Политикой конфиденциальности</a>
-													</label>
+								<h2 class="text-center">Как с вами связаться:</h2>
+								<hr>
+								<div class="row">
+									<form>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="Адрес объекта *" name="object-address" id="object-address" required />
 												</div>
-												<hr>
-												<button type="submit" class="btn btn-danger btn-lg">Оформить заказ</button>
-												</div> <!-- end col -->
-											</form>
-										</div>	<!-- end row -->
-									</div>	<!-- end #order-payment -->
-								</div>	<!-- end tabpanel -->
-							</div>	<!-- end tab-content -->
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="Ваше имя *" name="your-name" id="your-name" required />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="Электронный адрес: *" name="your-email" id="your-email" required />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="Контактный телефон *" name="your-phone" id="your-phone" required />
+												</div>
+											</div>
+										</div> <!-- end col -->
+										<div class="col-sm-6">
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="Адрес регистрации проверяемого" name="reg-address" id="reg-address" />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="ФИО проверяемого" name="fio" id="fio" />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-calendar-o fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="Дата рождения проверяемого" name="birthday" id="birthday" />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<div class="input-group-addon"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
+													<input type="text" class="form-control input-lg" placeholder="ИНН проверяемого" name="inn" id="inn" />
+												</div>
+											</div>
+										</div> <!-- end col -->
+										<div class="col-sm-12">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked> 
+												Согласен на обработку персональных данных в соответствии с <a href="#" target="_blank">Политикой конфиденциальности</a>
+											</label>
+										</div>
+										<hr>
+										<button type="submit" class="btn btn-danger btn-lg">Оформить заказ</button>
+										</div> <!-- end col -->
+									</form>
+								</div>	<!-- end row -->
+							</div>	<!-- end #recommended-checks -->
+
 						</div> <!-- end col -->
 
 							
@@ -509,34 +375,8 @@
 		
 		</div> <!-- end row -->
 
-		
-
 	</div> <!-- end wrapper container-fluid -->
 	
-
-	<div id="cart-container" class="fadeInUp animated">
-		<div id="cart" class="container">
-			<div class="row">
-				<div class="col-sm-1 text-center">
-					<i class="fa fa-shopping-basket fa-3x"></i>
-				</div>
-				<div class="col-sm-7">
-					<p id="cart-empty-text">Корзина пуста...</p>
-					<ol id="cart-list">
-					</ol>
-				</div>
-				<div class="col-sm-4 text-right">
-					<div id="sum-block">
-						<span id="sum">0</span> 
-						<i class="fa fa-rub"></i>
-					</div>
-					<div id="btn-order-block">
-						<a id="go-step3" href="#step3" data-toggle="tab" class="btn btn-danger btn-lg">Заказать</a>
-					</div>
-				</div>
-			</div>	<!-- end row -->
-		</div>	 <!-- end container -->
-	</div>	 <!-- end cart -->
 	
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
