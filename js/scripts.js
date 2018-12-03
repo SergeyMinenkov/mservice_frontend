@@ -235,6 +235,34 @@
 	
 	/* Страница "Рекомендуемые проверки" */
 	
+	// посчитать "Итого" в блоке комплекса
+	function calcTotalComplex() {
+		// обработать в цикле все блоки комплексов
+		$('.recommended-block').each(function(){
+			var total = 0;
+			// внутри комплекса посчитать "Итого" у включенных "чекбоксов"
+			$(this).find('.check-sum').each(function(){
+				// проверяем, включен ли "чекбокс"
+				if($(this.parentNode).find('input[type="checkbox"]').is(':checked')) {
+					total = parseFloat(total) + parseFloat($(this).html());
+				}
+				
+			});
+			// вывести "Итого"
+			$(this).find('.check-sum-total').html(total);
+		});
+	}
+	
+	// пересчитать "Итого" комплексов при загрузке и обновлении страницы
+	$(document).ready(function() {
+		calcTotalComplex();
+	});
+	
+	// пересчитать "Итого" комплекса при клике на "чекбокс"
+	$('.recommended-block').find('input[type="checkbox"]').change(function() {
+		calcTotalComplex();
+	});
+	
 	// обработчик нажатия на кнопку "Заказать" в блоке комплекса
 	$('.check-order-btn-block').on('click', 'button', function () {
 		// получаем название текущего комплекса из <h3>
@@ -244,9 +272,9 @@
 		// делаем блок с формой заказа видимой
 		$('#recommended-order-block').removeClass('hidden');
 		// прописываем название выбранного комплекса
-		$('#selected-complex').find('h3').html(complexName);
+		//$('#selected-complex').find('h3').html(complexName);
 		// прописываем стоимость выбранного комплекса
-		$('#selected-complex').find('h4 span').html(complexPrice);
+		//$('#selected-complex').find('h4 span').html(complexPrice);
 		
 		// делаем невидимыми все комплексы, кроме выбранного
 		$('.recommended-block').each(function(){
@@ -254,6 +282,32 @@
 				$(this).hide();
 			}
 		});
+		// изменяем заголовок h1
+		$('#recommended').find('h1').html('<i class="fa fa-shopping-basket"></i> Ваш заказ:');
+		// показываем ссылку "К выбору рекомендуемых проверок"
+		$('#go-recommended-checks').removeClass('hidden');
+		// прячем кнопку "Выбрать"
+		$(this).hide();
+	});
+	
+	/* вернуться в список рекомендуемых проверок 
+		и восстановить отображение всех блоков по умолчанию
+	*/
+	$('#go-recommended-checks').click(function(event) {
+		// отключаем переход по ссылке по умолчанию
+		event.preventDefault();
+		// включаем в цикле все блоки комплексов и кнопки "Выбрать"
+		$('.recommended-block').each(function(){
+			$(this).show();
+			$(this).find('.check-order-btn-block button').show();
+		});
+		//$('.check-order-btn-block').show();
+		// изменяем заголовок h1
+		$('#recommended').find('h1').html('Рекомендуемые проверки');
+		// прячем блок "Как с вами связаться"
+		$('#recommended-order-block').addClass('hidden');
+		// прячем ссылку "К выбору рекомендуемых проверок" 
+		$(this).addClass('hidden');
 	});
 	
 	/*

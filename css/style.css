@@ -483,6 +483,10 @@ main {
 #recommended form .input-group-addon {
 	width: 60px;
 }
+#recommended #go-recommended-checks {
+	display: block;
+	margin-bottom: 2em;
+}
 /* конец добавить 03-12-18 */
 
 aside {
