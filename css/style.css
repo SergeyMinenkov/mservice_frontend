@@ -467,6 +467,15 @@ main {
 #recommended .check-order-btn-block .btn {
 	width: 180px;
 }
+#recommended #selected-complex {
+	border: 1px #f0f0f0 solid;
+	background-color: #f9f9f9;
+	padding: 2em 1em;
+	margin: 2em 0;
+}
+#recommended #selected-complex h4 span {
+	font-size: 1.4em;
+}
 #recommended form input[type="text"],
 #recommended input[type="date"] {
 	min-width: 350px;

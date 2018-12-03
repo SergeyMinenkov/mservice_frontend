@@ -153,7 +153,7 @@
 										</tbody>
 									</table>
 									<div class="check-order-btn-block text-left">
-										<a href="#" class="btn btn-danger btn-lg">Заказать</a>
+										<button class="btn btn-danger btn-lg">Выбрать</button>
 									</div>
 								</div> <!-- end recommended-block -->
 								
@@ -217,84 +217,97 @@
 										</tbody>
 									</table>
 									<div class="check-order-btn-block text-left">
-										<a href="#" class="btn btn-danger btn-lg">Заказать</a>
+										<button class="btn btn-danger btn-lg">Выбрать</button>
 									</div>
 								</div> <!-- end recommended-block -->
 								
-								<h2 class="text-center">Как с вами связаться:</h2>
-								<hr>
-								<div class="row">
-									<form>
-										<div class="col-sm-6">
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="Адрес объекта *" name="object-address" id="object-address" required />
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="Ваше имя *" name="your-name" id="your-name" required />
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="Электронный адрес: *" name="your-email" id="your-email" required />
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="Контактный телефон *" name="your-phone" id="your-phone" required />
-												</div>
-											</div>
-										</div> <!-- end col -->
-										<div class="col-sm-6">
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="Адрес регистрации проверяемого" name="reg-address" id="reg-address" />
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="ФИО проверяемого" name="fio" id="fio" />
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-calendar-o fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="Дата рождения проверяемого" name="birthday" id="birthday" />
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-addon"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
-													<input type="text" class="form-control input-lg" placeholder="ИНН проверяемого" name="inn" id="inn" />
-												</div>
-											</div>
-										</div> <!-- end col -->
-										<div class="col-sm-12">
-										<div class="checkbox">
-											<label>
-												<input type="checkbox" checked> 
-												Согласен на обработку персональных данных в соответствии с <a href="#" target="_blank">Политикой конфиденциальности</a>
-											</label>
-										</div>
-										<hr>
-										<button type="submit" class="btn btn-danger btn-lg">Оформить заказ</button>
-										</div> <!-- end col -->
-									</form>
-								</div>	<!-- end row -->
-							</div>	<!-- end #recommended-checks -->
-
-						</div> <!-- end col -->
-
-							
+								<div id="recommended-order-block" class="hidden">
+								
+									<h2 class="text-center"><i class="fa fa-shopping-basket"></i> Ваш заказ:</h2>
+									<hr>
 									
+									<div id="selected-complex" class="row">
+										<div class="col-sm-7">
+											<h3></h3>
+										</div>
+										<div class="col-sm-5 text-right">
+											<h4>Стоимость: <span></span> <i class="fa fa-rub"></i></h4>
+										</div>
+									</div>
+									
+									<h2 class="text-center">Как в вами связаться:</h2>
+									<hr>
+									
+									<div class="row">
+										<form>
+											<div class="col-sm-6">
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="Адрес объекта *" name="object-address" id="object-address" required />
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="Ваше имя *" name="your-name" id="your-name" required />
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="Электронный адрес: *" name="your-email" id="your-email" required />
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="Контактный телефон *" name="your-phone" id="your-phone" required />
+													</div>
+												</div>
+											</div> <!-- end col -->
+											<div class="col-sm-6">
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="Адрес регистрации проверяемого" name="reg-address" id="reg-address" />
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="ФИО проверяемого" name="fio" id="fio" />
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-calendar-o fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="Дата рождения проверяемого" name="birthday" id="birthday" />
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
+														<input type="text" class="form-control input-lg" placeholder="ИНН проверяемого" name="inn" id="inn" />
+													</div>
+												</div>
+											</div> <!-- end col -->
+											<div class="col-sm-12">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" checked> 
+													Согласен на обработку персональных данных в соответствии с <a href="#" target="_blank">Политикой конфиденциальности</a>
+												</label>
+											</div>
+											<hr>
+											<button type="submit" class="btn btn-danger btn-lg">Оформить заказ</button>
+											</div> <!-- end col -->
+										</form>
+									</div>	<!-- end row -->
+								</div>	<!-- end #recommended-order-block -->
+							</div>	<!-- end #recommended -->
+
+						</div> <!-- end col -->			
 						
 					</div> <!-- end row -->
 				</div> <!-- end container -->

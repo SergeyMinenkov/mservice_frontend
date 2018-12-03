@@ -233,6 +233,29 @@
 
 	});
 	
+	/* Страница "Рекомендуемые проверки" */
+	
+	// обработчик нажатия на кнопку "Заказать" в блоке комплекса
+	$('.check-order-btn-block').on('click', 'button', function () {
+		// получаем название текущего комплекса из <h3>
+		var complexName = $(this.parentNode.parentNode).find('h3').html();
+		// получаем стоимость текущего комплекса из class="check-sum-total"
+		var complexPrice = $(this.parentNode.parentNode).find('.check-sum-total').html();
+		// делаем блок с формой заказа видимой
+		$('#recommended-order-block').removeClass('hidden');
+		// прописываем название выбранного комплекса
+		$('#selected-complex').find('h3').html(complexName);
+		// прописываем стоимость выбранного комплекса
+		$('#selected-complex').find('h4 span').html(complexPrice);
+		
+		// делаем невидимыми все комплексы, кроме выбранного
+		$('.recommended-block').each(function(){
+			if ($(this).find('h3').html() != complexName) {
+				$(this).hide();
+			}
+		});
+	});
+	
 	/*
 	мсервис:
 -----------
