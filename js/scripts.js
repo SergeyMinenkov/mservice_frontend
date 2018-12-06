@@ -310,6 +310,33 @@
 		$(this).addClass('hidden');
 	});
 	
+	/* 
+		делаем навигацию для комплексов. Навигация будет внутри страницы по
+		якорям.	Для этого нужно каждому комплексу задать id.
+		Создаем функцию, которая сработает сразу при загрузке документа.
+		id будем создавать по шаблону recommended-block-1...2...3...
+		Счетчик храним в переменной recommended-block-count.
+		В функции в цикле перебираем все блоки recommended-block и 
+		добавляем им атрибут (attr) id.
+		Увеличиваем счетчик ++
+	*/
+	$(document).ready(function () {
+		var mainID = $('main').attr('page-id');
+		if(mainID == 'complex'){
+			$('#recommended-menu').removeClass('hidden');
+			var recommendedBlockCount = 1;
+			$('.recommended-block').each(function(){
+				$(this).attr('id','recommended-block' + recommendedBlockCount);
+				$('#recommended-menu').find('ol').append('<li>'
+					+ '<a href="#' + $(this).attr('id') 
+					+ '" class="scrolling-links">' 
+					+ $(this).find('h3').html() + '</a></li>'
+				);
+				recommendedBlockCount++;
+			});
+		}
+	});
+	
 	/*
 	мсервис:
 -----------

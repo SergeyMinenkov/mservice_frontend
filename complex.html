@@ -92,7 +92,7 @@
 				</div> <!-- end row -->
 			</div> <!-- end container-fluid -->
 			
-			<main role="main">
+			<main role="main" page-id="complex">
 
 				
 				<div class="container">
@@ -130,7 +130,7 @@
 												<td>
 													<span class="checkbox">
 														<label>
-															<input type="checkbox" checked>
+															<input type="checkbox" checked disabled>
 														</label>
 													</span>Архивная выписка из паспортного стола</td>
 												<td class="check-sum">2500</td>
@@ -209,6 +209,81 @@
 													</span>ПНД+НД</td>
 												<td class="check-sum">4000</td>
 											</tr>
+											<tr>
+												<td></td>
+												<td>Итого:</td>
+												<td class="text-center"><span class="check-sum-total">12000</span></td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="check-order-btn-block text-left">
+										<button class="btn btn-danger btn-lg">Выбрать</button>
+									</div>
+								</div> <!-- end recommended-block -->
+								
+								<div class="recommended-block">
+									<h3>Комплекс объект-субъект min+1</h3>
+									<table class="table table-responsive table-bordered">
+										<thead>
+											<tr>
+												<th>№</th>
+												<th>Наименование проверки</th>
+												<th>Цена, руб.</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-center">1</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked disabled>
+														</label>
+													</span>
+													История перехода права технический вид</td>
+												<td class="check-sum">4000</td>
+											</tr>
+											<tr>
+												<td class="text-center">2</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked disabled>
+														</label>
+													</span>Архивная выписка из паспортного стола</td>
+												<td class="check-sum">2500</td>
+											</tr>
+											<tr>
+												<td class="text-center">3</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked>
+														</label>
+													</span>ЦАБ выгрузка из базы</td>
+												<td class="check-sum">1500</td>
+											</tr>
+											<tr>
+												<td class="text-center">4</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked>
+														</label>
+													</span>ПНД+НД</td>
+												<td class="check-sum">4000</td>
+											</tr>
+											<tr>
+												<td class="text-center">4</td>
+												<td>
+													<span class="checkbox">
+														<label>
+															<input type="checkbox" checked>
+														</label>
+													</span>Проверка на банкротство</td>
+												<td class="check-sum">1000</td>
+											</tr>
+											<tr>
 											<tr>
 												<td></td>
 												<td>Итого:</td>
@@ -311,6 +386,12 @@
 						
 					</div> <!-- end row -->
 				</div> <!-- end container -->
+				
+				<div id="recommended-menu" class="hidden-xs hidden-sm hidden">
+					<h4>Навигация</h4><hr>
+					<ol>
+					</ol>
+				</div>
 
 				
 				<div id="subscribe-container" class="container-fluid">
@@ -385,7 +466,7 @@
 					</div> <!-- end container -->
 				</div> <!-- end row -->
 			</footer> <!-- end footer -->
-		
+
 		</div> <!-- end row -->
 
 	</div> <!-- end wrapper container-fluid -->

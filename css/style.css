@@ -489,6 +489,26 @@ main {
 }
 /* конец добавить 03-12-18 */
 
+
+/* добавить 05-12-18 */
+#recommended-menu {
+	position: fixed; 
+	top:1em;
+	right:0.5em; 
+	border: 2px #f0f0f0 solid;
+	background-color: #f9f9f9;
+	padding: 1em;
+}
+#recommended-menu ol {
+	list-style-type: decimal;
+	margin-left: 1em;
+}
+#recommended-menu ol li {
+	line-height: 2;
+}
+/* конец добавить 05-12-18 */
+
+
 aside {
 	
 }
