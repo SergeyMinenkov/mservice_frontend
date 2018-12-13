@@ -208,6 +208,18 @@
 						</div> <!-- end advance -->
 						
 						<div id="order" class="col-sm-12">
+						
+							<div id="order-steps" class="row">
+								<div class="col-xs-4 text-right">
+									<p id="order-steps-1" >Шаг 1</p>
+								</div>
+								<div class="col-xs-4 text-center">
+									<p id="order-steps-2" >Шаг 2</p>
+								</div>
+								<div class="col-xs-4 text-left">
+									<p id="order-steps-3" >Шаг 3</p>
+								</div>
+							</div>
 
 
 							<!-- Вкладки панелей -->  
@@ -281,7 +293,7 @@
 														<!--<p>4500 руб.</p>-->
 
 														<select class="select-price form-control input-lg">
-														  <option>выбрать стоимость</option>
+														  <option>выбрать сроки и стоимость</option>
 														  <option value="4500">1 день 4500 руб.</option>
 														  <option value="5500">2 дня 5500 руб.</option>
 														</select>
@@ -319,7 +331,7 @@
 														<!--<p>4500 руб.</p>-->
 
 														<select class="select-price form-control input-lg">
-														  <option>выбрать стоимость</option>
+														  <option>выбрать сроки и стоимость</option>
 														  <option value="4500">1 день 4500 руб.</option>
 														  <option value="5500">2 дня 5500 руб.</option>
 														</select>
@@ -338,7 +350,7 @@
 								<div role="tabpanel" class="tab-pane" id="step3">
 									
 									<div id="order-payment">
-										<a href="#select-services" data-toggle="tab" onclick="showcart()"><i class="fa fa-chevron-left"></i> К услугам</a>
+										<a id="go-back-step2" href="#select-services" data-toggle="tab"><i class="fa fa-chevron-left"></i> К услугам</a>
 										<h2 class="text-center">Оформить заказ</h2>
 										<hr>
 										

@@ -112,7 +112,18 @@
 		$('#testimonials-on-main').show();
 		$('#our-clients-on-main').show();
 		$('#subscribe-container').show();
+		$('#order-steps-1').css('background-color', '#34AD00');
+		$('#order-steps-2').css('background-color', '#A0A0A0');
+		$('#order-steps-3').css('background-color', '#A0A0A0');
 	});
+	// кнопка "К услугам" на шаг 2
+	$('#go-back-step2').click(function() {
+		showcart();
+		$('#order-steps-1').css('background-color', '#A0A0A0');
+		$('#order-steps-2').css('background-color', '#34AD00');
+		$('#order-steps-3').css('background-color', '#A0A0A0');
+	});
+	
 	// кнопка "Далее" на второй шаг
 	$('#go-step2').click(function() {
 		showcart();
@@ -127,7 +138,10 @@
 		var selectedRegion = $('input[name="selectRegion"]:checked').val();
 		$('#region-name-step2').html(selectedRegion);
 		$('#region-name-step3').html(selectedRegion);
-
+		// изменить цвет круга "Шаг 1" и "Шаг 2"
+		$('#order-steps-1').css('background-color', '#A0A0A0');
+		$('#order-steps-2').css('background-color', '#34AD00');
+		$('#order-steps-3').css('background-color', '#A0A0A0');
 	});
 	// кнопка "Заказать" на третий шаг
 	$('#go-step3').click(function() {
@@ -140,6 +154,9 @@
 			else {
 				$('#go-step3').attr('href', '#step3');
 				hidecart();
+				$('#order-steps-1').css('background-color', '#A0A0A0');
+				$('#order-steps-2').css('background-color', '#A0A0A0');
+				$('#order-steps-3').css('background-color', '#34AD00');
 			}
 		});
 	});
@@ -172,7 +189,7 @@
 			$('#table-order-step3').append(
 				'<tr>' + 
 				'<td class="counter"></td>' +
-				'<td>' + $(this.parentNode.parentNode).find('a').html() + '</td>' +
+				'<td>' + $(this.parentNode.parentNode).find('a').html() + ' <i class="fa fa-close" title="Удалить"></i></td>' +
 				'<td class="sum">' + $(this).val() + '</td>' + 
 				'</tr>'
 			);
@@ -221,8 +238,18 @@
 			$('#sum').html( parseFloat(sum) - parseFloat($(this).closest('li').find('span').html()) );
 			$('.step3-sum').html( parseFloat(sum) - parseFloat($(this).closest('li').find('span').html()) );
 		}
-		// удалить услугу из списка
-		$(this).closest('li').remove();		
+		// удалить услугу из списка, перед этим запомнить ее № в списке
+		var cartLiIndex = $(this).closest('li').index();
+		$(this).closest('li').remove();
+		
+		// удалить услугу из корзины, если ее № в корзине = № в списке
+		$('#table-order-step3').find('.counter').each(function() {
+				// проверяем, если № услуги в корзине = № в списке
+				if( Number($(this).html()) == Number(cartLiIndex+1)) {
+					// тогда - удаляем tr
+					$(this.parentNode).remove();
+				}
+			});
 		
 		//показать "Корзина пуста..." если список пуст
 		$('#cart-list').each(function(){
@@ -250,6 +277,12 @@
 			});
 			// вывести "Итого"
 			$(this).find('.check-sum-total').html(total);
+			// если "Итого" = 0, заблокировать кнопку "Выбрать"
+			if($(this).find('.check-sum-total').html() === '0') {
+				$(this).find('.check-order-btn-block button').addClass('hidden');
+			} else {
+				$(this).find('.check-order-btn-block button').removeClass('hidden');
+			}
 		});
 	}
 	
@@ -263,7 +296,7 @@
 		calcTotalComplex();
 	});
 	
-	// обработчик нажатия на кнопку "Заказать" в блоке комплекса
+	// обработчик нажатия на кнопку "Выбрать" в блоке комплекса
 	$('.check-order-btn-block').on('click', 'button', function () {
 		// получаем название текущего комплекса из <h3>
 		var complexName = $(this.parentNode.parentNode).find('h3').html();

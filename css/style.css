@@ -445,6 +445,7 @@ main {
 #recommended table td {
 	vertical-align: middle;
 }
+
 #recommended table td .checkbox {
 	display: inline-block;
 	vertical-align: middle;
@@ -508,6 +509,31 @@ main {
 }
 /* конец добавить 05-12-18 */
 
+/* добавить 13-12-18 */
+
+#order-steps {
+	margin: 2em 0 1em 0;
+}
+#order-steps p {
+	background-color: #A0A0A0;
+	border: 3px #fff solid;
+	color: #fff;
+	padding: 1.4em 0.6em;
+	font-size: 1.2em;
+	display: inline-block;
+	border-radius: 100px;
+}
+#order-steps #order-steps-1 {
+	background-color: #34AD00;
+}
+
+#table-order-step3 td .fa-close {
+	color: #D9534F;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+/* конец добавить 13-12-18 */
 
 aside {
 	
